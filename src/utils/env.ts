@@ -15,7 +15,7 @@ export default function env(_name: string, fallback?: any): any {
  * @param fallback Fallback value
  */
 env.int = (_name: string, fallback?: number): number | undefined => {
-  return Number.isNaN(Number.parseInt(env(_name, fallback))) ? undefined : Number.parseInt(env(_name, fallback));
+  return Number.isNaN(Number.parseInt(env(_name, fallback), 10)) ? undefined : Number.parseInt(env(_name, fallback), 10);
 };
 
 /**
