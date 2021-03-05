@@ -4,7 +4,7 @@
  * @param fallback Fallback value
  */
 export default function env(_name: string, fallback?: any): any {
-  return process.env[_name] || fallback;
+  return process.env[_name] ?? fallback;
 };
 
 /**
@@ -35,5 +35,5 @@ env.float = (_name: string, fallback?: number): number | undefined => {
  * @param fallback Fallback value
  */
 env.boolean = (_name: string, fallback?: boolean): boolean | undefined => {
-  return env(_name) === 'true' ? true : (env(_name) === 'false' ? false : (fallback || undefined));
+  return env(_name) === 'true' ? true : (env(_name) === 'false' ? false : (fallback ?? undefined));
 };
