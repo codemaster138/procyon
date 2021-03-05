@@ -59,7 +59,7 @@ test('env falls back', t => {
 });
 
 test('env.int deserializes numbers', t => {
-  process.INT_I = '5';
+  process.env.INT_I = '5';
   t.is(env.int('INT_I'), 5);
 });
 
@@ -68,7 +68,7 @@ test('env.int falls back', t => {
 });
 
 test('env.float deserializes numbers', t => {
-  process.FLOAT_I = '72.5';
+  process.env.FLOAT_I = '72.5';
   t.is(env.float('FLOAT_I'), 72.5);
 });
 
