@@ -5,7 +5,7 @@
  */
 export default function env(_name: string, fallback?: any): any {
   return process.env[_name] ?? fallback;
-};
+}
 
 /**
  * Read an environment variable and parse it into an integer.
