@@ -15,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
+    "@types/express": "^4.17.11",
     "@types/node": "^14.14.31",
     "ava": "^3.15.0",
     "axios": "^0.21.1",
@@ -46,6 +47,7 @@
     "exclude": "**/test/*"
   },
   "dependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   }
 }
